@@ -665,10 +665,6 @@
   #error "TFT_SHARED_SPI is now TFT_SHARED_IO."
 #elif defined(LCD_PINS_ENABLE)
   #error "LCD_PINS_ENABLE is now LCD_PINS_EN."
-#elif ANY(USE_XMIN_PLUG, USE_XMAX_PLUG, USE_YMIN_PLUG, USE_YMAX_PLUG, USE_ZMIN_PLUG, USE_ZMAX_PLUG, \
-          USE_IMIN_PLUG, USE_IMAX_PLUG, USE_JMIN_PLUG, USE_JMAX_PLUG, USE_KMIN_PLUG, USE_KMAX_PLUG, \
-          USE_UMIN_PLUG, USE_UMAX_PLUG, USE_VMIN_PLUG, USE_VMAX_PLUG, USE_WMIN_PLUG, USE_WMAX_PLUG)
-  #error "USE_*_PLUG settings are no longer needed and should be removed."
 #elif defined(X2_USE_ENDSTOP)
   #error "X2_USE_ENDSTOP is obsolete. Instead set X2_STOP_PIN directly. (e.g., 'X2_USE_ENDSTOP _XMAX_' becomes 'X2_STOP_PIN X_MAX_PIN')"
 #elif defined(Y2_USE_ENDSTOP)
